@@ -5,26 +5,6 @@ export default function Home() {
   let title = 'Next.js page';
   let message = 'React Next.js sample page.';
 
-  const h1 = {
-    textAlign: 'right',
-    padding: '5px 15px',
-  };
-
-  const p = {
-    textAlign: 'left',
-    margin: '0px 5px',
-    color: '#669',
-    fontSize: '18pt',
-  };
-
-  const subtitle = {
-    textAlign: 'center',
-    margin: '0px 5px',
-    color: '#99d',
-    fontSize: '24pt',
-    fontWeight: 'bold',
-  };
-
   return (
     <div>
       <Head>
@@ -35,18 +15,32 @@ export default function Home() {
           crossOrigin="anonymous"
         ></link>
       </Head>
+      <style jsx>{`
+        h1 {
+          text-align: center;
+        }
 
-      <h1 className="bg-primary text-white display-4" style={h1}>
-        React
-      </h1>
+        h2 {
+          text-align: center;
+          margin: 0px 5px;
+          color: #aad;
+          font-size: 36pt;
+          font-weight: bold;
+        }
+
+        p {
+          text-align: left;
+          margin: 0px 5px;
+          color: blue;
+          font-size: 18pt;
+        }
+      `}</style>
+
+      <h1 className="bg-primary text-white display-4">React</h1>
       <div className="container">
-        <p className="my-3" style={subtitle} id="subtitle">
-          {title}
-        </p>
+        <h2 className="my-3 subtitle">{title}</h2>
         <div className="alert alert-primary text-center">
-          <p className="h5" style={p}>
-            {message}.
-          </p>
+          <p className="h5">{message}.</p>
         </div>
       </div>
     </div>
