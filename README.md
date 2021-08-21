@@ -1,34 +1,96 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 書籍
 
-## Getting Started
+[React.js＆Next.js 超入門 第 2 版](https://www.amazon.co.jp/React-js%EF%BC%86Next-js%E8%B6%85%E5%85%A5%E9%96%80-%E7%AC%AC2%E7%89%88-%E6%8E%8C%E7%94%B0%E6%B4%A5%E8%80%B6%E4%B9%83-ebook/dp/B08XBNGYVH/ref=sr_1_3?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&dchild=1&keywords=React.js+%26+Next.js&qid=1629550522&s=digital-text&sr=1-3)
 
-First, run the development server:
+## 目次
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Chapter 5 Next.js で React をパワーアップしよう！
+  - 5-1 Next.js を使おう
+    - クライアントサイド・レンダリング？
+    - Next.js プロジェクトを作ろう
+    - ページを作ろう！
+    - Next.js は「pages」でページを用意する
+    - エクスポートしてみよう
+    - 出力される HTML ファイルをチェック！
+    - スタイルを適用する
+    - ビルトイン CSS を使おう！
+    - CSS ファイルは使えない？
+  - 5-2 複数ファイルを活用しよう
+    - 複数のページを作ろう
+    - 外部スタイルシートの利用
+    - コンポーネントの利用
+    - レイアウトを考えよう
+    - レイアウト用コンポーネントの作成
+    - ページでレイアウトを利用する
+    - <head>の設定
+    - 静的ファイルの利用
+    - Image コンポーネントを表示する
+  - 5-3 Redux でデータを共有する
+    - Redux を使う準備
+    - AppWithRedux コンポーネントの作成
+    - 修正 App コンポーネントを作る
+    - ストアを用意しよう
+    - ストア作成の内容をチェック！
+    - Counter コンポーネントを作る
+    - Counter を利用しよう
+  - 5-4 足し算専用電卓を作る！
+    - メモ書きから足し算する電卓！
+    - ストアを修正する
+    - Calc コンポーネントを作ろう
+    - calc.js を作ろう
+    - Style.js にスタイルを追加
+    - この章のまとめ
+- Chapter 6 Firebase でデータベースを使おう！
+  - 6-1 Firebase を使ってみよう
+    - データベースを使おう！
+    - Firebase ってどういうもの？
+    - Firebase プロジェクトを作る
+    - オーバービューをチェック！
+    - データベースを作ろう
+    - データを構築しよう
+    - Authentication を表示する
+    - コピーされる設定情報について
+    - React で Firebase を使おう！
+    - index.js を修正する
+    - App.js の修正
+    - Sampledata コンポーネント
+    - Firebase アクセスをチェック！
+  - 6-2 Firebase データベースの基本操作を覚える
+    - Next.js プロジェクトに Firebase を組み込む！
+    - ストアで Firebase を初期化する
+    - fire ページの作成
+    - 特定 ID のデータを表示する
+    - fire_find ページを作ろう
+    - Firefind コンポーネントを作る
+    - データの追加
+    - fire_add ページを作ろう
+    - Fireadd コンポーネントを作る
+    - データの削除
+    - Firedelete コンポーネントを作ろう
+  - 6-3 メッセージ機能付アドレスブックを作る
+    - メッセージが送れるアドレス帳！
+    - アプリの設計をしよう
+    - store.js を修正しよう
+    - Account コンポーネントを作る
+    - address ページを作る
+    - Address コンポーネントを作成する
+    - address_add ページを作る
+    - AddressAdd コンポーネントの作成
+    - address_show ページを作る
+    - AddressShow コンポーネントの作成
+    - ライブラリファイルの作成
+    - スタイルの用意
+    - Firebase のデータベースアクセスを設定
+    - ユーザー認証の設定
+  - 6-4 スクリプトのポイントをチェック！
+    - ポイントを押さえて読む！
+    - データの構造を確認
+    - ソーシャルログインの設定
+    - Firebase のキーについて
+    - アドレスデータの取得
+    - データの作成
+    - 登録したアカウントのデータを表示する
+    - メッセージの表示
+    - メッセージの送信
+    - 今後の改良点は？
+    - これから先はどうするの？
