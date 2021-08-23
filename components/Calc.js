@@ -7,7 +7,7 @@ export default function Calc(props) {
   const [data, setData] = usePersist('calc-history', []);
   const [func, setFunc] = useState({func: {}});
 
-  const fetchFunc = (address) => fetch(address).then((res) => res.json);
+  const fetchFunc = (address) => fetch(address).then((res) => res.json());
 
   useEffect(() => {
     fetchFunc('/api/func').then((r) => {
