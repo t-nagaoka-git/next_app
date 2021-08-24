@@ -48,7 +48,7 @@ export default function Calc(props) {
     const res = fe(arr);
     setMessage(res);
     data.unshift(fid + ' = ' + res);
-    setData(Data);
+    setData(data);
     setInput('');
   };
 
@@ -59,11 +59,11 @@ export default function Calc(props) {
         <div className="form-group">
           <input type="text" value={input} className="form-control" onChange={onChange} onKeyPress={onKeyPress} />
         </div>
-        {Object.entries(func.func).map((value, key) => {
+        {Object.entries(func.func).map((value, key) => (
           <button className="btn btn-secondary m-1" key={key} title={value[1].caption} id={value[0]} onClick={doFunc}>
             {value[0]}
-          </button>;
-        })}
+          </button>
+        ))}
       </div>
       <table className="table">
         <thead>

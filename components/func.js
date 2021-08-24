@@ -12,8 +12,8 @@ export default {
       caption: '10,20,30...というようにカンマで区切った数字の合計を計算します。',
       function: `(...param) => {
         let re = 0
-        for (let i in param) {
-          re += param[i] * 1
+        for(let i in param[0]) {
+          re += param[0][i] * 1
         }
         return re
       }`,
