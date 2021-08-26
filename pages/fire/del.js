@@ -3,7 +3,6 @@ import Layout from '../../components/layout';
 import firebase from 'firebase';
 import {useRouter} from 'next/router';
 import '../../components/fire';
-import {route} from 'next/dist/server/router';
 
 const db = firebase.firestore();
 
