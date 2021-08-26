@@ -18,7 +18,9 @@ export default function Find(props) {
 
   const doAction = (e) => {
     db.collection('mydata')
-      .where('name', '==', find)
+      .orderBy('name')
+      .startAt(find)
+      .endAt(find + '¥uf8ff')
       .get()
       .then((snapshot) => {
         snapshot.forEach((document) => {
