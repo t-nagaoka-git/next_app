@@ -73,7 +73,12 @@ export default function Home() {
           snapshot.forEach((document) => {
             const doc = document.data();
             addresses.push(
-              <li className="list-group-item list-group-item-action p-1" onClick={doLink} id={document.id}>
+              <li
+                className="list-group-item list-group-item-action p-1"
+                onClick={doLink}
+                id={document.id}
+                key={document.id}
+              >
                 {doc.flag ? '√' : ''}
                 {doc.name}({doc.mail})
               </li>

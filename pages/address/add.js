@@ -18,7 +18,7 @@ export default function Home() {
   // ログインしていなければトップページに戻る
   useEffect(() => {
     if (auth.currentUser == null) {
-      route.push('/address');
+      router.push('/address');
     }
   }, []);
 
